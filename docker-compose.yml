@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  gcc-c:
+    image: gcc-i
+    container_name: gcc-c
+    volumes:
+    - ./src:/workdir
+    command: 
+    - -o 
+    - ./hello.out
+    - ./hello.cpp
